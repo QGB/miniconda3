@@ -1,0 +1,23 @@
+{
+  "build": "h14c3975_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/noarch",
+  "constrains": [],
+  "depends": [],
+  "features": "",
+  "fn": "tzdata-2020d-h14c3975_0.conda",
+  "legacy_bz2_md5": "ee76a6bbe0c03c7e7cbdb4ad1914eb7d",
+  "legacy_bz2_size": 123560,
+  "license": "LicenseRef-Public-Domain",
+  "md5": "40a253c6181dd2d6ced43bf3533d4c7c",
+  "name": "tzdata",
+  "noarch": "generic",
+  "package_type": "noarch_generic",
+  "sha256": "30575647534c7230c9b04fdcdf88e94d93a97140d25b40c197eaf56fe38265e5",
+  "size": 112654,
+  "subdir": "noarch",
+  "timestamp": 1603969927967,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/noarch/tzdata-2020d-h14c3975_0.conda",
+  "version": "2020d"
+}

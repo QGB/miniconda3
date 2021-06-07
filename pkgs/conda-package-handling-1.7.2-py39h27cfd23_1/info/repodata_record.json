@@ -1,0 +1,27 @@
+{
+  "build": "py39h27cfd23_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "python >=3.9,<3.10.0a0",
+    "six",
+    "tqdm"
+  ],
+  "features": "",
+  "fn": "conda-package-handling-1.7.2-py39h27cfd23_1.conda",
+  "legacy_bz2_md5": "086326046c1447d9c586f4224ffe1474",
+  "legacy_bz2_size": 998674,
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "f1bf657d58268dac1cffd37bca12cd01",
+  "name": "conda-package-handling",
+  "sha256": "2196c245bbab996d591435916135a83229676ddeeb20f14a2f2903b6f09ac1df",
+  "size": 907747,
+  "subdir": "linux-64",
+  "timestamp": 1605484883832,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/conda-package-handling-1.7.2-py39h27cfd23_1.conda",
+  "version": "1.7.2"
+}

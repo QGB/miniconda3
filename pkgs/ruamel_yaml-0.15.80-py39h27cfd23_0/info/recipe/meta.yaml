@@ -1,0 +1,75 @@
+# This file created by conda-build 3.20.3+73.gf7874c19.dirty
+# meta.yaml template originally from:
+# /tmp/build/80754af9/rsync-recipes/ruamel_yaml-0.15.80-python_3.9-on-linux_64, last modified Mon Nov 16 11:45:41 2020
+# ------------------------------------------------
+
+package:
+    name: ruamel_yaml
+    version: 0.15.80
+source:
+    sha256: 4f203351575dba0829c7b1e5d376d08cf5f58e4a2b844e8ce552b3e41cd414e6
+    url: https://pypi.io/packages/source/r/ruamel.yaml/ruamel.yaml-0.15.80.tar.gz
+build:
+    number: '0'
+    string: py39h27cfd23_0
+requirements:
+    build:
+        - _libgcc_mutex 0.1 main
+        - binutils_impl_linux-64 2.33.1 he6710b0_7
+        - binutils_linux-64 2.33.1 h9595d00_15
+        - gcc_impl_linux-64 7.3.0 habb00fd_1
+        - gcc_linux-64 7.3.0 h553295d_15
+        - ld_impl_linux-64 2.33.1 h53a641e_7
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+    host:
+        - _libgcc_mutex 0.1 main
+        - ca-certificates 2020.10.14 0
+        - certifi 2020.6.20 pyhd3eb1b0_3
+        - cython 0.29.21 py39h2531618_0
+        - ld_impl_linux-64 2.33.1 h53a641e_7
+        - libedit 3.1.20191231 h14c3975_1
+        - libffi 3.3 he6710b0_2
+        - libgcc-ng 9.1.0 hdf63c60_0
+        - libstdcxx-ng 9.1.0 hdf63c60_0
+        - ncurses 6.2 he6710b0_1
+        - openssl 1.1.1h h7b6447c_0
+        - pip 20.2.4 py39h06a4308_0
+        - python 3.9.0 hdb3f193_2
+        - readline 8.0 h7b6447c_0
+        - setuptools 50.3.1 py39h06a4308_1
+        - sqlite 3.33.0 h62c20be_0
+        - tk 8.6.10 hbc83047_0
+        - tzdata 2020d h14c3975_0
+        - wheel 0.35.1 pyhd3eb1b0_0
+        - xz 5.2.5 h7b6447c_0
+        - yaml 0.2.5 h7b6447c_0
+        - zlib 1.2.11 h7b6447c_3
+    run:
+        - libgcc-ng >=7.3.0
+        - python >=3.9,<3.10.0a0
+        - yaml >=0.2.5,<0.3.0a0
+test:
+    commands:
+        - if pip show ruamel.yaml; then exit 1; fi
+        - $PYTHON -m pip install ruamel.yaml
+        - $PYTHON -c "import ruamel.yaml"
+    imports:
+        - ruamel_yaml
+        - ruamel_yaml.ext._ruamel_yaml
+    requires:
+        - pip
+        - pytest
+about:
+    home: https://bitbucket.org/ruamel/yaml
+    license: MIT
+    license_family: MIT
+    license_file: LICENSE
+    summary: A patched copy of ruamel.yaml.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - isuruf
+        - jakirkham
+        - mbargull

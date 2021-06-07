@@ -1,0 +1,7 @@
+{
+  "openssl": "1.1.1",
+  "c_compiler": "gcc",
+  "c_compiler_version": "7.3.0",
+  "target_platform": "linux-64",
+  "channel_targets": "defaults"
+}
